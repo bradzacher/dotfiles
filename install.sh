@@ -30,3 +30,8 @@ cargo install cargo-instruments --locked               # instruments for profili
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 nvm i 22
 nvm alias default 22
+
+
+# macos configs
+defaults write -g ApplePressAndHoldEnabled -bool false                  # disable long press accent popover
+defaults write com.apple.finder AppleShowAllFiles True; killall Finder  # show dotfiles by default
