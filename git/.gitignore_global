@@ -1,0 +1,6 @@
+*~
+.DS_Store
+.wakatime-project
+.watchmanconfig
+
+**/src-bak/**
