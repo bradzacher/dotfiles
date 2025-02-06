@@ -1,0 +1,33 @@
+[user]
+	name = Brad Zacher
+	email = brad.zacher@gmail.com
+  signingkey = 9132184EA9C3AF39
+
+[blame]
+	markIgnoredLines = true
+	markUnblamableLines = true
+
+[color]
+	ui = auto
+
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = nano
+	pager = 
+	fsmonitor = true
+	untrackedcache = true
+
+[credential]
+	useHttpPath = true
+
+[diff]
+	external = difft --skip-unchanged
+
+[fetch]
+	prune = true
+
+[log]
+	date = local
+
+[push]
+	autoSetupRemote = true
