@@ -86,10 +86,10 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $VSCODE_INJECTION ]]; then
-  export EDITOR='code --wait'
-elif [[ -n $CURSOR_TRACE_ID ]]; then
+if [[ -n $CURSOR_TRACE_ID ]] || [[ "$BROWSER" = */\.cursor-server/* ]]; then
   export EDITOR='cursor --wait'
+elif [[ -n $VSCODE_INJECTION ]]; then
+  export EDITOR='code --wait'
 else
   export EDITOR='nano'
 fi
